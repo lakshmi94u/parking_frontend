@@ -1,4 +1,4 @@
-FROM node
+FROM node:9-alpine
 
 RUN apt-get update && apt-get upgrade -y \
     && apt-get clean
