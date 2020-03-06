@@ -9,9 +9,8 @@ WORKDIR /app
 COPY package.json /app/
 RUN npm install --only=production
 RUN npm audit fix
-COPY /public/index.html /app/src
-COPY /src /app/public
-RUN npm run build
+
+
 
 COPY src /app/src
 
