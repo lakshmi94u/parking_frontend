@@ -3,8 +3,8 @@ FROM node
 RUN apt-get update && apt-get upgrade -y \
     && apt-get clean
 
-RUN npm install --only=production
-RUN npm run build
+RUN npm install 
+
 RUN npm audit fix
 
 
