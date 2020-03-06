@@ -10,7 +10,7 @@ COPY package.json /app/
 RUN npm install --only=production
 RUN npm audit fix
 RUN npm run build
-
+COPY public/index.html /src
 COPY src /app/src
 
 EXPOSE 3000
