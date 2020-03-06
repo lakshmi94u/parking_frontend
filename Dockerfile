@@ -8,6 +8,8 @@ WORKDIR /app
 
 COPY package.json /app/
 RUN npm install --only=production
+RUN npm audit fix
+RUN npm run build
 
 COPY src /app/src
 
