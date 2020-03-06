@@ -11,7 +11,7 @@ RUN npm install --only=production
 RUN npm audit fix
 RUN npm run build
 
-COPY src /public
+COPY public /public
 
 EXPOSE 3000
 
