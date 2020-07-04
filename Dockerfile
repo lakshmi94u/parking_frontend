@@ -1,4 +1,4 @@
-FROM tomcat
+FROM tomcat:8.0-alpine
 LABEL maintainer "suresh"
 WORKDIR /opt
 RUN apt-get update -y
